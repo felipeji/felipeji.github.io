@@ -1,0 +1,46 @@
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+}
+
+.navbar {
+    background-color: #343a40;
+}
+
+.navbar-nav .nav-link {
+    color: #fff !important;
+}
+
+.jumbotron {
+    background: #343a40;
+    color: #fff;
+    padding: 2rem;
+    text-align: center;
+}
+
+.jumbotron h1 {
+    font-size: 3rem;
+}
+
+.section {
+    padding: 4rem 0;
+}
+
+.section-header {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.card {
+    margin-bottom: 2rem;
+}
+
+footer {
+    background: #343a40;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
