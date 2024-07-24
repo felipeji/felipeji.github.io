@@ -229,3 +229,24 @@ footer {
 .card-header .btn-link:hover {
     text-decoration: none; /* Ensure no underline on hover */
 }
+
+
+/* Bullet icons */
+
+.icon-list {
+    list-style: none; /* Remove default bullets */
+    padding: 0;
+}
+
+.icon-list li {
+    margin: 10px 0;
+    font-size: 16px;
+    line-height: 1.5;
+    display: flex;
+    align-items: center; /* Align icons and text */
+}
+
+.icon-list i {
+    margin-right: 8px;
+    color: #1B4F72; /* Adjust color as needed */
+}
