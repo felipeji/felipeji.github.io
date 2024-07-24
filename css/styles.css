@@ -137,7 +137,7 @@ footer {
     position: fixed;
     bottom: 20px;
     right: 20px;
-    height: 150px;
+    height: 100px;
     width: 350px;
     background-color: #343a40;
     color: #fff;
@@ -182,26 +182,30 @@ footer {
     font-size: 0.75rem;
 }
 
-.copy-email:hover .copy-tooltip {
-    visibility: visible;
-    opacity: 1;
-}
 
 /* Popup Message Styles */
 .copy-popup {
     display: none;
     position: fixed;
-    bottom: 80px; /* Adjust position as needed */
-    right: 30px; /* Adjust position as needed */
-    background-color: #343a40;
+    top: 25px; /* Adjust position from the top as needed */
+    right: 25px; /* Adjust position from the right as needed */
+    background-color: #10ee48;
     color: #fff;
-    padding: 10px 20px;
-    border-radius: 5px;
+    padding: 2px 2px;
+    border-radius: 4px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     z-index: 1001;
-    opacity: 0.9;
-    transition: opacity 0.3s ease-in-out;
+    opacity: 1;
+    transition: opacity 0.1s ease-in-out;
+    font-size: 0.875rem;
 }
+
+.copy-email:hover .copy-tooltip {
+    visibility: visible;
+    opacity: 1;
+    bottom: 30px;
+    left: auto;
+}   
 
 /* CV Section */
 .card-header {
