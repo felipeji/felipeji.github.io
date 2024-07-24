@@ -4,7 +4,7 @@ body {
 }
 
 .navbar {
-    background-color: #343a40;
+    background-color: #1B4F72;
 }
 
 .navbar-nav .nav-link {
@@ -12,7 +12,7 @@ body {
 }
 
 .jumbotron {
-    background: #343a40;
+    background: #1B4F72;
     color: #fff;
     padding: 2rem;
     text-align: center;
@@ -31,16 +31,197 @@ body {
     margin-bottom: 3rem;
 }
 
-.card {
-    margin-bottom: 2rem;
-}
 
 footer {
-    background: #343a40;
+    background: #1B4F72;
     color: #fff;
     text-align: center;
     padding: 1rem 0;
     position: fixed;
     width: 100%;
     bottom: 0;
+}
+
+.profile-img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+}
+
+
+
+
+/* Gallery Section */
+.section {
+    padding: 4rem 0;
+    background-color: #f8f9fa; /* Light gray background for a clean look */
+}
+
+.section-header {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.section-header h2 {
+    color: #1b1b1c; /* Blue color for the section header */
+}
+
+.section-header p {
+    color: #343a40; /* Dark gray color for the section description */
+}
+
+.gallery-item {
+    position: relative;
+    margin-bottom: 2rem;
+}
+
+.gallery-item img {
+    width: 100%;
+    border-radius: 50%;
+    transition: transform 0.3s;
+}
+
+.gallery-item:hover img {
+    transform: scale(1.1);
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .3s ease;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 50%;
+}
+
+.gallery-item:hover .overlay {
+    opacity: 1;
+}
+
+.text {
+    color: white;
+    font-size: 1.2rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+
+
+
+/* Projects Card */
+
+.card {
+    display: flex;
+    justify-content: center; /* Horizontally center the image */
+    align-items: center;    /* Vertically center the image */
+    flex-direction: column; /* Ensure items stack vertically */
+}
+
+.card-img-top {
+    width: 60%; /* Adjust the size as needed */
+    object-fit: cover;
+    border-radius: 0.25rem; /* Adjust border radius as needed */
+}
+
+
+/* Floating Contact Box Styles */
+.floating-box {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    height: 150px;
+    width: 350px;
+    background-color: #343a40;
+    color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1000; /* Ensure it stays on top of other content */
+    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+    opacity: 0.9;
+}
+
+.box-content {
+    text-align: center;
+}
+
+.floating-box:hover {
+    transform: scale(1.05);
+    opacity: 1;
+}
+
+/* Email List Item */
+.copy-email {
+    position: relative;
+    cursor: pointer;
+}
+
+/* Tooltip */
+.copy-tooltip {
+    visibility: hidden;
+    width: 60px;
+    background-color: #343a40;
+    color: #fff;
+    text-align: center;
+    border-radius: 5px;
+    padding: 5px;
+    position: absolute;
+    bottom: 125%; /* Adjust the position of the tooltip */
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+    transition: opacity 0.3s;
+    font-size: 0.75rem;
+}
+
+.copy-email:hover .copy-tooltip {
+    visibility: visible;
+    opacity: 1;
+}
+
+/* Popup Message Styles */
+.copy-popup {
+    display: none;
+    position: fixed;
+    bottom: 80px; /* Adjust position as needed */
+    right: 30px; /* Adjust position as needed */
+    background-color: #343a40;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1001;
+    opacity: 0.9;
+    transition: opacity 0.3s ease-in-out;
+}
+
+/* CV Section */
+.card-header {
+    background-color: #1B4F72; /* Teal background for card headers */
+    color: #fff; /* White text color */
+    padding: 0.5rem 1rem; /* Reduce the padding to make it less tall */
+    border-bottom: 1px solid #ddd; /* Add a subtle border to separate the header from the body */
+    width: 100%; /* Ensure the header spans the full width of the card */
+}
+
+.card-header .btn-link {
+    color: #fff; /* White text color for button */
+    font-size: 1rem; /* Adjust font size as needed */
+    text-decoration: none; /* Remove underline from button text */
+    display: block; /* Make button block-level to fill the width of the header */
+    width: 100%; /* Ensure the button spans the full width of the header */
+    text-align: left; /* Align the text to the left */
+    padding: 0.5rem; /* Adjust padding to fit the reduced height */
+}
+
+.card-header .btn-link:hover {
+    text-decoration: none; /* Ensure no underline on hover */
 }

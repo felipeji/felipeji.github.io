@@ -3,10 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
+    <title>Felipe's Portfolio</title>
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
     <link href="css/styles.css" rel="stylesheet">
+    
 </head>
 <body>
     <!-- Navigation -->
@@ -20,7 +21,7 @@
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
                     <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#cv">CV</a></li>
                 </ul>
             </div>
         </div>
@@ -29,9 +30,9 @@
     <!-- Jumbotron -->
     <header class="jumbotron">
         <div class="container">
-            <h1 class="display-4">Welcome to My Portfolio</h1>
-            <p class="lead">Showcasing my work and skills.</p>
-        </div>
+            <h1 class="display-4"> Felipe Jiménez-Ibarra, PhD </h1>
+            <p class="lead">  Data Scientist | Software Developer | Astrophysicist </p>
+       </div>
     </header>
 
     <!-- About Section -->
@@ -39,38 +40,55 @@
         <div class="container">
             <div class="section-header">
                 <h2>About Me</h2>
-                <p>Brief bio and skills.</p>
+
+                <p>
+                    I'm an astrophysicist with a decade of experience, now transitioning to industry. 
+                    Take a look at my portfolio, where I showcase my past work and skills.
+
+                </p>
+                  
             </div>
             <div class="row">
                 <div class="col-lg-4">
-                    <img src="path/to/profile.jpg" alt="Profile Picture" class="img-fluid rounded-circle mb-4">
+                    <img src="images/profile.jpg" alt="Profile Picture" class="img-fluid rounded-circle mb-4 profile-img">
                 </div>
                 <div class="col-lg-8">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas odio, vitae scelerisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa.</p>
                     <p>Skills: Python, Django, PostgreSQL, Machine Learning, Data Analysis, etc.</p>
                 </div>
             </div>
         </div>
     </section>
 
+
     <!-- Projects Section -->
     <section id="projects" class="section bg-light">
         <div class="container">
             <div class="section-header">
                 <h2>Projects</h2>
-                <p>A showcase of my projects.</p>
+                <p>
+                    In the past decade, I've tackled projects ranging from developing analysis routines to designing complex observations that unveil the hidden behavior of matter around black holes. 
+                    But let’s stay on Earth—here are some of my most relevant projects, closely aligned with everyday industry needs.
+            
+                </p>
             </div>
             <div class="row">
+                
                 <div class="col-md-4">
                     <div class="card">
-                        <img src="path/to/project1.jpg" class="card-img-top" alt="Project 1">
+                        <img src="images/pywifes.png" class="card-img-top" alt="PyWiFeS">
                         <div class="card-body">
-                            <h5 class="card-title">Project 1</h5>
-                            <p class="card-text">Brief description of Project 1.</p>
-                            <a href="link-to-project1" class="btn btn-primary">View Project</a>
+                            <h5 class="card-title"> A Python, Automated Data Reduction Pipeline for a Robotic Telescope </h5>
+
+                            <p class="card-text">                                 
+                            I was part of a small team designing, refactoring, and writing the data reduction pipeline for the ANU 2.3m Telescope. The code is reliable enough to work with a robotic telescope, triggering observations on the fly. As soon as observations are complete, the pipeline automatically detects and extracts the three brightest sources, allowing astronomers to enjoy fresh data with their morning coffee.                            
+                            </p>
+
+                            <a href="https://github.com/PyWiFeS/pipeline" class="btn btn-primary">View Project</a>
+
                         </div>
                     </div>
                 </div>
+                
                 <div class="col-md-4">
                     <div class="card">
                         <img src="path/to/project2.jpg" class="card-img-top" alt="Project 2">
@@ -81,6 +99,8 @@
                         </div>
                     </div>
                 </div>
+                
+                
                 <div class="col-md-4">
                     <div class="card">
                         <img src="path/to/project3.jpg" class="card-img-top" alt="Project 3">
@@ -95,52 +115,122 @@
         </div>
     </section>
 
-    <!-- Contact Section -->
-    <section id="contact" class="section">
-        <div class="container">
-            <div class="section-header">
-                <h2>Contact</h2>
-                <p>Get in touch with me.</p>
-            </div>
-            <div class="row">
-                <div class="col-md-6">
-                    <form>
-                        <div class="form-group">
-                            <label for="name">Name</label>
-                            <input type="text" class="form-control" id="name" placeholder="Your Name">
-                        </div>
-                        <div class="form-group">
-                            <label for="email">Email address</label>
-                            <input type="email" class="form-control" id="email" placeholder="Your Email">
-                        </div>
-                        <div class="form-group">
-                            <label for="message">Message</label>
-                            <textarea class="form-control" id="message" rows="4" placeholder="Your Message"></textarea>
-                        </div>
-                        <button type="submit" class="btn btn-primary">Submit</button>
-                    </form>
+<!-- CV Section -->
+<section id="cv" class="section">
+    <div class="container">
+        <div class="section-header">
+            <h2>Curriculum Vitae</h2>
+            <p>Interactive CV showcasing my experience and education.</p>
+        </div>
+        <div id="cvAccordion">
+            <div class="card">
+                <div class="card-header" id="headingOne">
+                    <h5 class="mb-0">
+                        <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            Experience
+                        </button>
+                    </h5>
                 </div>
-                <div class="col-md-6">
-                    <ul class="list-unstyled">
-                        <li><i class="fas fa-map-marker-alt"></i> Address: Your Address</li>
-                        <li><i class="fas fa-phone"></i> Phone: (555) 555-5555</li>
-                        <li><i class="fas fa-envelope"></i> Email: youremail@example.com</li>
-                        <li><i class="fas fa-globe"></i> Website: www.example.com</li>
-                    </ul>
-                    <div class="mt-4">
-                        <a href="https://twitter.com" class="text-dark mr-2"><i class="fab fa-twitter fa-2x"></i></a>
-                        <a href="https://linkedin.com" class="text-dark mr-2"><i class="fab fa-linkedin fa-2x"></i></a>
-                        <a href="https://github.com" class="text-dark"><i class="fab fa-github fa-2x"></i></a>
+
+                <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#cvAccordion">
+                    <div class="card-body">
+                        <h5>Postdoctoral Research Fellow / 2022-2024 </h5>
+                        <p>Monash University / Melbourne, VIC</p>
+                        <p>Description of responsibilities and achievements.</p>
+                        <hr>
+                        <h5>Position 2</h5>
+                        <p>Company Name, Location</p>
+                        <p><strong>Duration:</strong> Month Year - Month Year</p>
+                        <p>Description of responsibilities and achievements.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header" id="headingTwo">
+                    <h5 class="mb-0">
+                        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            Education
+                        </button>
+                    </h5>
+                </div>
+                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#cvAccordion">
+                    <div class="card-body">
+                        <h5>Degree 1</h5>
+                        <p>University Name, Location</p>
+                        <p><strong>Duration:</strong> Month Year - Month Year</p>
+                        <p>Description of degree and relevant coursework or honors.</p>
+                        <hr>
+                        <h5>Degree 2</h5>
+                        <p>University Name, Location</p>
+                        <p><strong>Duration:</strong> Month Year - Month Year</p>
+                        <p>Description of degree and relevant coursework or honors.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header" id="headingThree">
+                    <h5 class="mb-0">
+                        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            Skills
+                        </button>
+                    </h5>
+                </div>
+                <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#cvAccordion">
+                    <div class="card-body">
+                        <ul>
+                            <li>Skill 1</li>
+                            <li>Skill 2</li>
+                            <li>Skill 3</li>
+                            <li>Skill 4</li>
+                            <li>Skill 5</li>
+                        </ul>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
+    </div>
+</section>
+
+    <br>
+    <br>
+
+
+
+
+
+
+<!-- Floating Box -->
+<div class="floating-box">
+    <div class="box-content">
+        <h4>Get in touch!</h4>
+
+        <ul class="list-unstyled">
+            <!-- <li><i class="fas fa-map-marker-alt"></i> Address: Your Address</li>
+            <li><i class="fas fa-phone"></i> Phone: (555) 555-5555</li> -->
+
+
+            <li id="copy-email" class="copy-email"><i class="fas fa-envelope"></i> felipejimenezibarra@gmail.com
+                <span class="copy-tooltip">Copy</span>
+            </li>
+            <div id="copy-popup" class="copy-popup">Copied!</div>
+
+            <li>
+                <a href="https://www.linkedin.com/in/felipeji/" target="_blank">
+                    <i class="fab fa-linkedin" style="font-size: 25px; color: #fff; transition: color 0.3s;"></i>
+                </a>
+            </li>
+
+
+            <!-- <li><i class="fas fa-globe"></i> Website: www.example.com</li> -->
+        </ul>
+
+    </div>
+</div>
 
     <!-- Footer -->
     <footer>
         <div class="container">
-            <p>&copy; 2024 My Portfolio. All Rights Reserved.</p>
+            <p>&copy; 2024. Self-designed and developed.</p>
         </div>
     </footer>
 
@@ -148,5 +238,32 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+
+    <script>
+        document.getElementById('copy-email').addEventListener('click', function() {
+            // Create a temporary input element
+            var tempInput = document.createElement('input');
+            tempInput.value = 'felipejimenezibarra@gmail.com';
+            document.body.appendChild(tempInput);
+            
+            // Select the input value and copy it
+            tempInput.select();
+            document.execCommand('copy');
+            
+            // Remove the temporary input element
+            document.body.removeChild(tempInput);
+            
+            // Show the popup message
+            var popup = document.getElementById('copy-popup');
+            popup.style.display = 'block';
+            
+            // Hide the popup message after 2 seconds
+            setTimeout(function() {
+                popup.style.display = 'none';
+            }, 2000);
+        });
+        </script>
+        
 </body>
 </html>
